@@ -34,14 +34,14 @@ export default function ModeToggle() {
   return (
     <Button
       variant="ghost"
-      className="w-10 rounded-full hover:bg-slate-800/50 dark:hover:bg-slate-700/50"
+      className="w-10 rounded-full hover:bg-primary-foreground/20 text-primary-foreground"
       aria-label="Toggle Theme"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
-        <Sun className="size-5 text-yellow-400" />
+        <Sun className="size-5" />
       ) : (
-        <Moon className="size-5 text-white" />
+        <Moon className="size-5" />
       )}
     </Button>
   );
