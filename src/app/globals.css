@@ -49,73 +49,107 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.147 0.004 49.25);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.147 0.004 49.25);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.147 0.004 49.25);
-  --primary: oklch(0.216 0.006 56.043);
-  --primary-foreground: oklch(0.985 0.001 106.423);
-  --secondary: oklch(0.97 0.001 106.424);
-  --secondary-foreground: oklch(0.216 0.006 56.043);
-  --muted: oklch(0.97 0.001 106.424);
-  --muted-foreground: oklch(0.553 0.013 58.071);
-  --accent: oklch(0.97 0.001 106.424);
-  --accent-foreground: oklch(0.216 0.006 56.043);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.923 0.003 48.717);
-  --input: oklch(0.923 0.003 48.717);
-  --ring: oklch(0.709 0.01 56.259);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0.001 106.423);
-  --sidebar-foreground: oklch(0.147 0.004 49.25);
-  --sidebar-primary: oklch(0.216 0.006 56.043);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.97 0.001 106.424);
-  --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
-  --sidebar-border: oklch(0.923 0.003 48.717);
-  --sidebar-ring: oklch(0.709 0.01 56.259);
+
+  /* --- CORES PRINCIPAIS (TEMA CLARO) --- */
+  /* Fundo Creme suave */
+  --background: #FDF5E6;
+  /* Texto Marrom da marca */
+  --foreground: #7A3118;
+
+  /* Cartões e Popups */
+  --card: #FDF5E6;
+  --card-foreground: #7A3118;
+  --popover: #FDF5E6;
+  --popover-foreground: #7A3118;
+
+  /* Cor Principal (Botões Sólidos) - Marrom */
+  --primary: #7A3118;
+  --primary-foreground: #FDF5E6;
+
+  /* Elementos Secundários (Fundos cinza/bege claros) */
+  --secondary: #EADDCD; /* Um tom areia para contraste */
+  --secondary-foreground: #7A3118;
+  --muted: #EADDCD;
+  --muted-foreground: #8F5E50; /* Marrom mais suave */
+  --accent: #EADDCD; /* Hover em menus */
+  --accent-foreground: #7A3118;
+
+  /* Erros e Alertas */
+  --destructive: #cc3333;
+  --destructive-foreground: #FDF5E6;
+
+  /* Bordas e Inputs */
+  --border: #D8C3B5; /* Bege mais escuro para bordas */
+  --input: #D8C3B5;
+  --ring: #7A3118; /* Foco do input */
+
+  /* Gráficos (Tons terrosos) */
+  --chart-1: #7A3118;
+  --chart-2: #A0522D;
+  --chart-3: #CD853F;
+  --chart-4: #DEB887;
+  --chart-5: #F4A460;
+
+  /* Sidebar (Menu Lateral) - Igual ao fundo ou levemente diferente */
+  --sidebar: #FDF5E6;
+  --sidebar-foreground: #7A3118;
+  --sidebar-primary: #7A3118;
+  --sidebar-primary-foreground: #FDF5E6;
+  --sidebar-accent: #EADDCD;
+  --sidebar-accent-foreground: #7A3118;
+  --sidebar-border: #D8C3B5;
+  --sidebar-ring: #7A3118;
 }
 
 .dark {
-  --background: oklch(0.147 0.004 49.25);
-  --foreground: oklch(0.985 0.001 106.423);
-  --card: oklch(0.216 0.006 56.043);
-  --card-foreground: oklch(0.985 0.001 106.423);
-  --popover: oklch(0.216 0.006 56.043);
-  --popover-foreground: oklch(0.985 0.001 106.423);
-  --primary: oklch(0.923 0.003 48.717);
-  --primary-foreground: oklch(0.216 0.006 56.043);
-  --secondary: oklch(0.268 0.007 34.298);
-  --secondary-foreground: oklch(0.985 0.001 106.423);
-  --muted: oklch(0.268 0.007 34.298);
-  --muted-foreground: oklch(0.709 0.01 56.259);
-  --accent: oklch(0.268 0.007 34.298);
-  --accent-foreground: oklch(0.985 0.001 106.423);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.553 0.013 58.071);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.216 0.006 56.043);
-  --sidebar-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.268 0.007 34.298);
-  --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.553 0.013 58.071);
-}
+  /* --- CORES PRINCIPAIS (TEMA ESCURO) --- */
+  /* Fundo Marrom da marca (Experiência imersiva) */
+  --background: #7A3118;
+  /* Texto Creme para leitura */
+  --foreground: #FDF5E6;
 
+  --card: #7A3118;
+  --card-foreground: #FDF5E6;
+  --popover: #7A3118;
+  --popover-foreground: #FDF5E6;
+
+  /* No modo escuro, o botão principal destaca-se sendo CLARO */
+  --primary: #FDF5E6;
+  --primary-foreground: #7A3118;
+
+  /* Elementos secundários (Marrom mais profundo) */
+  --secondary: #5C2412; /* Um marrom quase café para separar blocos */
+  --secondary-foreground: #FDF5E6;
+  --muted: #5C2412;
+  --muted-foreground: #D4BCAA; /* Creme mais apagado */
+  --accent: #5C2412;
+  --accent-foreground: #FDF5E6;
+
+  --destructive: #992222;
+  --destructive-foreground: #FDF5E6;
+
+  /* Bordas sutis sobre o fundo marrom */
+  --border: #8F4C36; 
+  --input: #5C2412;
+  --ring: #FDF5E6;
+
+  /* Gráficos modo escuro */
+  --chart-1: #FDF5E6;
+  --chart-2: #DEB887;
+  --chart-3: #F4A460;
+  --chart-4: #CD853F;
+  --chart-5: #A0522D;
+
+  /* Sidebar Dark */
+  --sidebar: #5C2412; /* Sidebar ligeiramente mais escura que o fundo */
+  --sidebar-foreground: #FDF5E6;
+  --sidebar-primary: #FDF5E6;
+  --sidebar-primary-foreground: #7A3118;
+  --sidebar-accent: #7A3118;
+  --sidebar-accent-foreground: #FDF5E6;
+  --sidebar-border: #8F4C36;
+  --sidebar-ring: #FDF5E6;
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
