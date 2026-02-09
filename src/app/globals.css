@@ -52,103 +52,103 @@
 
   /* --- CORES PRINCIPAIS (TEMA CLARO) --- */
   /* Fundo Creme suave */
-  --background: #FDF5E6;
+  --background: #fdf5e6;
   /* Texto Marrom da marca */
-  --foreground: #7A3118;
+  --foreground: #7a3118;
 
   /* Cartões e Popups */
-  --card: #FDF5E6;
-  --card-foreground: #7A3118;
-  --popover: #FDF5E6;
-  --popover-foreground: #7A3118;
+  --card: #fdf5e6;
+  --card-foreground: #7a3118;
+  --popover: #fdf5e6;
+  --popover-foreground: #7a3118;
 
   /* Cor Principal (Botões Sólidos) - Marrom */
-  --primary: #7A3118;
-  --primary-foreground: #FDF5E6;
+  --primary: #7a3118;
+  --primary-foreground: #fdf5e6;
 
   /* Elementos Secundários (Fundos cinza/bege claros) */
-  --secondary: #EADDCD; /* Um tom areia para contraste */
-  --secondary-foreground: #7A3118;
-  --muted: #EADDCD;
-  --muted-foreground: #8F5E50; /* Marrom mais suave */
-  --accent: #EADDCD; /* Hover em menus */
-  --accent-foreground: #7A3118;
+  --secondary: #eaddcd; /* Um tom areia para contraste */
+  --secondary-foreground: #7a3118;
+  --muted: #eaddcd;
+  --muted-foreground: #8f5e50; /* Marrom mais suave */
+  --accent: #eaddcd; /* Hover em menus */
+  --accent-foreground: #7a3118;
 
   /* Erros e Alertas */
   --destructive: #cc3333;
-  --destructive-foreground: #FDF5E6;
+  --destructive-foreground: #fdf5e6;
 
   /* Bordas e Inputs */
-  --border: #D8C3B5; /* Bege mais escuro para bordas */
-  --input: #D8C3B5;
-  --ring: #7A3118; /* Foco do input */
+  --border: #d8c3b5; /* Bege mais escuro para bordas */
+  --input: #d8c3b5;
+  --ring: #7a3118; /* Foco do input */
 
   /* Gráficos (Tons terrosos) */
-  --chart-1: #7A3118;
-  --chart-2: #A0522D;
-  --chart-3: #CD853F;
-  --chart-4: #DEB887;
-  --chart-5: #F4A460;
+  --chart-1: #7a3118;
+  --chart-2: #a0522d;
+  --chart-3: #cd853f;
+  --chart-4: #deb887;
+  --chart-5: #f4a460;
 
   /* Sidebar (Menu Lateral) - Igual ao fundo ou levemente diferente */
-  --sidebar: #FDF5E6;
-  --sidebar-foreground: #7A3118;
-  --sidebar-primary: #7A3118;
-  --sidebar-primary-foreground: #FDF5E6;
-  --sidebar-accent: #EADDCD;
-  --sidebar-accent-foreground: #7A3118;
-  --sidebar-border: #D8C3B5;
-  --sidebar-ring: #7A3118;
+  --sidebar: #fdf5e6;
+  --sidebar-foreground: #7a3118;
+  --sidebar-primary: #7a3118;
+  --sidebar-primary-foreground: #fdf5e6;
+  --sidebar-accent: #eaddcd;
+  --sidebar-accent-foreground: #7a3118;
+  --sidebar-border: #d8c3b5;
+  --sidebar-ring: #7a3118;
 }
 
 .dark {
   /* --- CORES PRINCIPAIS (TEMA ESCURO) --- */
   /* Fundo Marrom da marca (Experiência imersiva) */
-  --background: #7A3118;
+  --background: #7a3118;
   /* Texto Creme para leitura */
-  --foreground: #FDF5E6;
+  --foreground: #fdf5e6;
 
-  --card: #7A3118;
-  --card-foreground: #FDF5E6;
-  --popover: #7A3118;
-  --popover-foreground: #FDF5E6;
+  --card: #7a3118;
+  --card-foreground: #fdf5e6;
+  --popover: #7a3118;
+  --popover-foreground: #fdf5e6;
 
   /* No modo escuro, o botão principal destaca-se sendo CLARO */
-  --primary: #FDF5E6;
-  --primary-foreground: #7A3118;
+  --primary: #fdf5e6;
+  --primary-foreground: #7a3118;
 
   /* Elementos secundários (Marrom mais profundo) */
-  --secondary: #5C2412; /* Um marrom quase café para separar blocos */
-  --secondary-foreground: #FDF5E6;
-  --muted: #5C2412;
-  --muted-foreground: #D4BCAA; /* Creme mais apagado */
-  --accent: #5C2412;
-  --accent-foreground: #FDF5E6;
+  --secondary: #5c2412; /* Um marrom quase café para separar blocos */
+  --secondary-foreground: #fdf5e6;
+  --muted: #5c2412;
+  --muted-foreground: #d4bcaa; /* Creme mais apagado */
+  --accent: #5c2412;
+  --accent-foreground: #fdf5e6;
 
   --destructive: #992222;
-  --destructive-foreground: #FDF5E6;
+  --destructive-foreground: #fdf5e6;
 
   /* Bordas sutis sobre o fundo marrom */
-  --border: #8F4C36; 
-  --input: #5C2412;
-  --ring: #FDF5E6;
+  --border: #8f4c36;
+  --input: #5c2412;
+  --ring: #fdf5e6;
 
   /* Gráficos modo escuro */
-  --chart-1: #FDF5E6;
-  --chart-2: #DEB887;
-  --chart-3: #F4A460;
-  --chart-4: #CD853F;
-  --chart-5: #A0522D;
+  --chart-1: #fdf5e6;
+  --chart-2: #deb887;
+  --chart-3: #f4a460;
+  --chart-4: #cd853f;
+  --chart-5: #a0522d;
 
   /* Sidebar Dark */
-  --sidebar: #5C2412; /* Sidebar ligeiramente mais escura que o fundo */
-  --sidebar-foreground: #FDF5E6;
-  --sidebar-primary: #FDF5E6;
-  --sidebar-primary-foreground: #7A3118;
-  --sidebar-accent: #7A3118;
-  --sidebar-accent-foreground: #FDF5E6;
-  --sidebar-border: #8F4C36;
-  --sidebar-ring: #FDF5E6;
+  --sidebar: #5c2412; /* Sidebar ligeiramente mais escura que o fundo */
+  --sidebar-foreground: #fdf5e6;
+  --sidebar-primary: #fdf5e6;
+  --sidebar-primary-foreground: #7a3118;
+  --sidebar-accent: #7a3118;
+  --sidebar-accent-foreground: #fdf5e6;
+  --sidebar-border: #8f4c36;
+  --sidebar-ring: #fdf5e6;
 }
 @layer base {
   * {
