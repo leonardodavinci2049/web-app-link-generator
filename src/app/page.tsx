@@ -12,9 +12,6 @@ export default function Home() {
         <ModeToggle />
       </div>
 
-      {/* Background Gradient - matches theme primary color at top, fading to background */}
-      <div className="absolute inset-x-0 top-0 h-[65vh] bg-gradient-to-b from-primary via-primary/80 to-background -z-10 rounded-b-[3rem]" />
-
       {/* Content wrapper */}
       <div className="w-full max-w-md px-4 flex flex-col items-center z-10 pt-2">
         <AfiliadoHero />
