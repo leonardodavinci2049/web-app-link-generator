@@ -16,9 +16,9 @@ export default function Home() {
       <div className="w-full max-w-md px-4 flex flex-col items-center z-10 pt-2">
         <AfiliadoHero />
 
-        <div className="w-full flex justify-center mb-1">
+      {/*   <div className="w-full flex justify-center mb-1">
           <CountdownTimer />
-        </div>
+        </div> */}
 
         <UrgencyBanner />
 
