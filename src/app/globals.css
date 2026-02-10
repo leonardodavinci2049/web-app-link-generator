@@ -192,7 +192,12 @@ body {
   }
   body {
     @apply text-foreground;
-    background: linear-gradient(180deg, #ff71cd 0%, #eec1ea 100%);
+    background: linear-gradient(
+      135deg,
+      rgb(244, 114, 182),
+      rgb(216, 180, 254),
+      rgb(254, 205, 211)
+    );
     min-height: 100vh;
   }
 }
