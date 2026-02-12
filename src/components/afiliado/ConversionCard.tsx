@@ -4,6 +4,7 @@ import { AlertCircle, Link2, Sparkles, Ticket } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { generateAffiliateLinkAction } from "@/app/actions/generate-affiliate-link";
 import { ResultSection } from "./ResultSection";
 
 export function ConversionCard() {
@@ -12,7 +13,7 @@ export function ConversionCard() {
   const [generatedLink, setGeneratedLink] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleAction = () => {
+  const handleAction = async () => {
     if (generatedLink) {
       // Reset state to generate another
       setGeneratedLink(null);
@@ -46,13 +47,19 @@ export function ConversionCard() {
 
     setIsLoading(true);
 
-    // Simulate processing
-    setTimeout(() => {
-      const mockId = Math.random().toString(36).substring(2, 10);
-      const mockLink = `https://s.shopee.com.br/af-${mockId}`;
-      setGeneratedLink(mockLink);
+    try {
+      const result = await generateAffiliateLinkAction(inputLink.trim());
+
+      if (result.success && result.affiliateLink) {
+        setGeneratedLink(result.affiliateLink);
+      } else {
+        setError(result.error ?? "Erro ao gerar link de afiliado.");
+      }
+    } catch {
+      setError("Erro inesperado. Tente novamente.");
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -70,7 +77,7 @@ export function ConversionCard() {
         <div className="text-center space-y-2 mb-4">
           <h2 className="text-xl font-bold leading-tight">
             CUPOM VINCULADO
-            <br /> AO LINK 50%
+            <br /> AO LINK 40%
           </h2>
           <p className="text-muted-foreground text-xs px-2">
             Escolha qualquer produto da Shopee que a gente aplica o desconto pra
