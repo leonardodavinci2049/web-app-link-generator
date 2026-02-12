@@ -98,6 +98,13 @@ export const TAXONOMY_ENDPOINTS = {
   UPDATE_PATH_IMAGE: "/taxonomy/v2/taxonomy-upd-path-image",
 } as const;
 
+// Endpoints de Shopee Operation
+export const SHOPEE_ENDPOINTS = {
+  GENERATE_AFFILIATE_LINK: "/shopee-operation/v1/generate-affiliate-link",
+  GET_PRODUCT_OFFERS: "/shopee-operation/v1/get-product-offers",
+  GET_SHOPEE_OFFERS: "/shopee-operation/v1/get-shopee-offers",
+} as const;
+
 // Endpoints de Product Type
 export const PTYPE_ENDPOINTS = {
   FIND_ALL: "/ptype/v2/ptype-find-all",
