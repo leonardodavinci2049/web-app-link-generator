@@ -76,8 +76,7 @@ export function ConversionCard() {
         {/* Header content */}
         <div className="text-center space-y-2 mb-4">
           <h2 className="text-xl font-bold leading-tight">
-            CUPOM VINCULADO
-            <br /> AO LINK 40%
+            CUPOM DE DESCONTO AQUI
           </h2>
           <p className="text-muted-foreground text-xs px-2">
             Escolha qualquer produto da Shopee que a gente aplica o desconto pra
