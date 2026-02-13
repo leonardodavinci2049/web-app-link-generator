@@ -1,6 +1,7 @@
 "use client";
 
 import { AlertCircle, Link2, Sparkles, Ticket } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { generateAffiliateLinkAction } from "@/app/actions/generate-affiliate-link";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { ResultSection } from "./ResultSection";
 
 export function ConversionCard() {
+  const router = useRouter();
   const [inputLink, setInputLink] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [generatedLink, setGeneratedLink] = useState<string | null>(null);
@@ -54,6 +56,9 @@ export function ConversionCard() {
 
       if (result.success && result.affiliateLink) {
         setGeneratedLink(result.affiliateLink);
+        // Força o refetch explícito dos Server Components (RecentLinksSection)
+        // contornando possíveis inconsistências do cache de componentes
+        router.refresh();
       } else {
         setError(result.error ?? "Erro ao gerar link de afiliado.");
       }
