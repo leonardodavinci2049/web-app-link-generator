@@ -2,9 +2,9 @@
 
 import { AlertCircle, Link2, Sparkles, Ticket } from "lucide-react";
 import { useState } from "react";
+import { generateAffiliateLinkAction } from "@/app/actions/generate-affiliate-link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { generateAffiliateLinkAction } from "@/app/actions/generate-affiliate-link";
 import { ResultSection } from "./ResultSection";
 
 export function ConversionCard() {

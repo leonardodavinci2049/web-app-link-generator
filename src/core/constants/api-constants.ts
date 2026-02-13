@@ -105,6 +105,12 @@ export const SHOPEE_ENDPOINTS = {
   GET_SHOPEE_OFFERS: "/shopee-operation/v1/get-shopee-offers",
 } as const;
 
+// Endpoints de Promolinks
+export const PROMOLINKS_ENDPOINTS = {
+  LINK_GENERATION_FIND_ALL: "/promolinks/v2/link-generation-find-all",
+  PROMO_LINK_FIND_ALL: "/promolinks/v2/promo-link-find-all",
+} as const;
+
 // Endpoints de Product Type
 export const PTYPE_ENDPOINTS = {
   FIND_ALL: "/ptype/v2/ptype-find-all",
