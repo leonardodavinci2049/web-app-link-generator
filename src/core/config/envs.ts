@@ -17,6 +17,10 @@ const envsSchema = z.object({
     .string()
     .transform((val) => parseInt(val, 10))
     .pipe(z.number().positive("APP_ID must be a positive number")),
+  CLIENT_ID: z
+    .string()
+    .transform((val) => parseInt(val, 10))
+    .pipe(z.number().positive("CLIENT_ID must be a positive number")),
 
   // SHOPEE
   SHOPEE_CREDENTIAL: z.string().min(1, "SHOPEE_CREDENTIAL is required"),
@@ -96,6 +100,7 @@ if (typeof window === "undefined") {
     EXTERNAL_API_MAIN_URL: "",
     API_KEY: "",
     APP_ID: 0,
+    CLIENT_ID: 0,
     SHOPEE_CREDENTIAL: "",
     SHOPEE_SECRETKEY: "",
     SHOPEE_AFFILIATEENDPOINT: "",
@@ -121,6 +126,7 @@ export const envs = {
   API_KEY: envVars.API_KEY,
   SYSTEM: {
     APP_ID: envVars.APP_ID,
+    CLIENT_ID: envVars.CLIENT_ID,
   },
   SHOPEE: {
     CREDENTIAL: envVars.SHOPEE_CREDENTIAL,
