@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { ShopeeServiceApi } from "@/services/api/shopee";
 
 interface GenerateAffiliateLinkResult {
@@ -15,6 +16,8 @@ export async function generateAffiliateLinkAction(
     const response = await ShopeeServiceApi.generateAffiliateLink({
       originUrl,
     });
+
+    revalidatePath("/");
 
     return {
       success: true,
