@@ -33,6 +33,8 @@ export function ConversionCard() {
       "https://s.shopee.com",
       "https://br.shopee.com",
       "https://shopee.com.br",
+      "https://br.shp.ee",
+      "https://shp.ee",
     ];
 
     // Check if starts with valid prefix

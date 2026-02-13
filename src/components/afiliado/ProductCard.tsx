@@ -40,14 +40,20 @@ export function ProductCard({
     <div className="bg-card text-card-foreground border border-border rounded-xl p-3 shadow-sm flex gap-3 items-start transition-all hover:shadow-md">
       {/* Product Image */}
       <div className="relative w-16 h-16 min-w-16 rounded-lg overflow-hidden bg-muted">
-        <Image
-          src={imageUrl}
-          alt={productName}
-          fill
-          sizes="64px"
-          className="object-cover"
-          unoptimized
-        />
+        {imageUrl ? (
+          <Image
+            src={imageUrl}
+            alt={productName}
+            fill
+            sizes="64px"
+            className="object-cover"
+            unoptimized
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-muted-foreground text-xs">
+            Sem img
+          </div>
+        )}
       </div>
 
       {/* Product Info & Actions */}
