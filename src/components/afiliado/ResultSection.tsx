@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ShieldCheck, ShoppingBag } from "lucide-react";
+import { ShieldCheck, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function ResultSection({ link }: { link: string }) {
@@ -13,12 +13,14 @@ export function ResultSection({ link }: { link: string }) {
           Verificado
         </div>
 
-        <div className="flex flex-col items-center gap-3">
-          <div className="flex items-center gap-2 text-primary font-bold text-base">
-            <div className="bg-primary/10 p-1.5 rounded-full">
-              <Check className="w-4 h-4 text-primary" />
-            </div>
-            Desconto Aplicado com Sucesso!
+        <div className="flex flex-col items-center gap-4 py-2">
+          <div className="space-y-1">
+            <h3 className="text-primary font-bold text-lg leading-tight">
+              Cupom esgotado no momento!
+            </h3>
+            <p className="text-muted-foreground text-xs font-medium leading-relaxed max-w-[280px] mx-auto">
+              Copie o link abaixo e aguarde o próximo cupom ser gerado.
+            </p>
           </div>
 
           <Button
