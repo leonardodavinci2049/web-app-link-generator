@@ -19,7 +19,7 @@ export function AfiliadoHero() {
         <h1 className="text-2xl font-bold tracking-tight text-foreground">
           GERADOR DE DESCONTOS
         </h1>
-        <p className="text-foreground/80 font-medium text-sm">
+        <p className="text-foreground/80 font-medium text-xs">
           Você escolhe o produto, nós Geramos o Link com o Cupom!
         </p>
       </div>
