@@ -20,7 +20,7 @@ export function AfiliadoHero() {
           GERADOR DE DESCONTOS
         </h1>
         <p className="text-foreground/80 font-medium text-sm">
-          Você escolhe o produto, nós aplicamos o desconto!
+          Você escolhe o produto, nós Geramos o Link com o Cupom!
         </p>
       </div>
     </div>
