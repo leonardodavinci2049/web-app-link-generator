@@ -4,6 +4,8 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
+// import { Footer } from "@/components/footer/Footer";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,7 +39,7 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen flex-col">
             <div className="flex-1">{children}</div>
-            {/* <Footer /> */}
+            {/* {<Footer />} */}
           </div>
           <Toaster />
         </ThemeProvider>
