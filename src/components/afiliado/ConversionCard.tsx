@@ -71,7 +71,7 @@ export function ConversionCard() {
 
   return (
     <div className="relative w-full max-w-sm mx-auto mt-4">
-      <div className="bg-card text-card-foreground border-2 border-dashed border-primary/30 rounded-2xl p-5 pt-8 shadow-xl relative z-10 transition-all duration-300">
+      <div className="bg-card text-card-foreground border-2 border-dashed border-primary/30 rounded-2xl px-3 py-5 pt-8 shadow-xl relative z-10 transition-all duration-300">
         {/* Top Badge */}
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
           <div className="bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5 whitespace-nowrap">
@@ -94,16 +94,18 @@ export function ConversionCard() {
         {/* Input Section */}
         <div className="space-y-3">
           <div className="space-y-2">
-            <div className="relative">
-              <Link2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                className={`pl-9 h-12 rounded-xl transition-all border-input focus-visible:ring-primary ${error ? "border-destructive focus-visible:ring-destructive" : ""}`}
-                placeholder="Cole aqui o link do produto..."
-                value={inputLink}
-                onChange={(e) => setInputLink(e.target.value)}
-                disabled={isLoading || !!generatedLink}
-              />
-            </div>
+            {!generatedLink && (
+              <div className="relative">
+                <Link2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  className={`pl-9 h-12 rounded-xl transition-all border-input focus-visible:ring-primary ${error ? "border-destructive focus-visible:ring-destructive" : ""}`}
+                  placeholder="Cole aqui o link do produto..."
+                  value={inputLink}
+                  onChange={(e) => setInputLink(e.target.value)}
+                  disabled={isLoading}
+                />
+              </div>
+            )}
             {error && (
               <div className="flex items-center gap-1.5 text-xs text-destructive font-medium animate-in slide-in-from-top-1">
                 <AlertCircle className="w-3.5 h-3.5" />
