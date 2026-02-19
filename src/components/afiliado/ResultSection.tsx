@@ -17,7 +17,7 @@ export function ResultSection({ link }: { link: string }) {
         <div className="flex flex-col items-center gap-4 py-2">
           <div className="space-y-1">
             <h3 className="text-primary font-bold text-lg leading-tight">
-              Cupom esgotado no momento!
+              Link gerado com sucesso!
             </h3>
             <p className="text-muted-foreground text-xs font-medium leading-relaxed max-w-[280px] mx-auto">
               Copie o link abaixo e aguarde o próximo cupom ser gerado.
