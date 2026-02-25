@@ -62,6 +62,15 @@ const envsSchema = z.object({
   NEXT_PUBLIC_COMPANY_NAME: z
     .string()
     .min(1, "NEXT_PUBLIC_COMPANY_NAME is required"),
+
+  // Google Analytics 4
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: z
+    .string()
+    .regex(
+      /^G-[A-Z0-9]+$/,
+      "NEXT_PUBLIC_GA_MEASUREMENT_ID must be a valid GA4 ID (e.g., G-XXXXXXXXXX)",
+    )
+    .optional(),
   NEXT_PUBLIC_COMPANY_PHONE: z
     .string()
     .min(10, "NEXT_PUBLIC_COMPANY_PHONE must have at least 10 characters")
@@ -117,6 +126,8 @@ if (typeof window === "undefined") {
     NEXT_PUBLIC_COMPANY_EMAIL: process.env.NEXT_PUBLIC_COMPANY_EMAIL || "",
     NEXT_PUBLIC_COMPANY_WHATSAPP:
       process.env.NEXT_PUBLIC_COMPANY_WHATSAPP || "",
+    NEXT_PUBLIC_GA_MEASUREMENT_ID:
+      process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || undefined,
   };
 }
 
@@ -146,4 +157,6 @@ export const envs = {
   NEXT_PUBLIC_COMPANY_PHONE: envVars.NEXT_PUBLIC_COMPANY_PHONE,
   NEXT_PUBLIC_COMPANY_EMAIL: envVars.NEXT_PUBLIC_COMPANY_EMAIL,
   NEXT_PUBLIC_COMPANY_WHATSAPP: envVars.NEXT_PUBLIC_COMPANY_WHATSAPP,
+  // Google Analytics 4
+  NEXT_PUBLIC_GA_MEASUREMENT_ID: envVars.NEXT_PUBLIC_GA_MEASUREMENT_ID,
 };
